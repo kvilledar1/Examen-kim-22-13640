@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envios+</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <div id="container">
+        <section id="content">
+            Kimberly Catania Villeda Rossales 0909 22-13640
+            <header>Bienvenido a Envios+ <br> Tarifa de Envios</header>
+            <br><br>
+            <form action="">
+                <label for="">Ingrese su Nombre</label><br>
+                <input type="text" placeholder="Nombre" name="caja" id="nombre">
+                <br><br>
+                <label for="">Ingrese el Nombre de la Mercaderia</label><br>
+                <input type="text" placeholder="Mercaderia" name="caja" id="mercaderia">
+                <br><br>
+                <label for="">Ingrese el Peso en Kg</label><br>
+                <input type="number" placeholder="Kg" name="caja" id="kg">
+                <br><br>
+                <h3>Seleccione Destino</h3>
+                <input type="button" value="Guatemala" id="guate" class="btn btn-green" onclick="formula1()">
+                <input type="button" value="Izabal" id="iza" class="btn btn-green" onclick="formula2()">
+                <input type="button" value="Petén" id="pet" class="btn btn-green" onclick="formula3()">
+                <input type="button" value="Chiquimula" id="chi" class="btn btn-green" onclick="formula4()">
+                <input type="button" value="Retalhuleu" id="ret" class="btn btn-green" onclick="formula5()">
+                <br><br><br>
+            </form>
+        </section>
+    </div>
+    <script>
+        var peso=2.25
+        var distancia=0.15
+  
+        function formula1() {
+          
+            var nombre = (document.getElementById("nombre").value);
+            var mercaderia = (document.getElementById("mercaderia").value);
+            var kg = parseFloat(document.getElementById("kg").value);
+
+            var pesokg = (peso*kg);
+            var ttdistancia = (distancia*10);
+
+            var tarifa1 = (pesokg+ttdistancia);
+            
+            alert ('Mucho gusto ' + nombre + ' Su Producto ' + mercaderia + ' Tiene una Tarifa de Envio de : Q' + tarifa1);
+        }
+        function formula2() {
+          
+          var nombre = (document.getElementById("nombre").value);
+          var mercaderia = (document.getElementById("mercaderia").value);
+          var kg = parseFloat(document.getElementById("kg").value);
+
+          var pesokg = (peso*kg);
+          var ttdistancia = (distancia*300);
+
+          var tarifa1 = (pesokg+ttdistancia);
+          
+          alert ('Mucho gusto ' + nombre + ' Su Producto ' + mercaderia + ' Tiene una Tarifa de Envio de : Q' + tarifa1);
+      }
+      function formula3() {
+          
+          var nombre = (document.getElementById("nombre").value);
+          var mercaderia = (document.getElementById("mercaderia").value);
+          var kg = parseFloat(document.getElementById("kg").value);
+
+          var pesokg = (peso*kg);
+          var ttdistancia = (distancia*460);
+
+          var tarifa1 = (pesokg+ttdistancia);
+          
+          alert ('Mucho gusto ' + nombre + ' Su Producto ' + mercaderia + ' Tiene una Tarifa de Envio de : Q' + tarifa1);
+      }
+      function formula4() {
+          
+          var nombre = (document.getElementById("nombre").value);
+          var mercaderia = (document.getElementById("mercaderia").value);
+          var kg = parseFloat(document.getElementById("kg").value);
+
+          var pesokg = (peso*kg);
+          var ttdistancia = (distancia*178);
+
+          var tarifa1 = (pesokg+ttdistancia);
+          
+          alert ('Mucho gusto ' + nombre + ' Su Producto ' + mercaderia + ' Tiene una Tarifa de Envio de : Q' + tarifa1);
+      }
+      function formula5() {
+          
+          var nombre = (document.getElementById("nombre").value);
+          var mercaderia = (document.getElementById("mercaderia").value);
+          var kg = parseFloat(document.getElementById("kg").value);
+
+          var pesokg = (peso*kg);
+          var ttdistancia = (distancia*200);
+
+          var tarifa1 = (pesokg+ttdistancia);
+          
+          alert ('Mucho gusto ' + nombre + ' Su Producto ' + mercaderia + ' Tiene una Tarifa de Envio de : Q' + tarifa1);
+      }
+    </script>
+</body>
+</html>
